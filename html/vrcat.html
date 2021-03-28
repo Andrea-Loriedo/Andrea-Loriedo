@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Andrea Loriedo - VRCAT</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!-- Update these with your own fonts -->
+        <script src="https://kit.fontawesome.com/0eb5144cc3.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500;900&family=Source+Sans+Pro:wght@300;500;900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../assets/images/avatar.jpeg" type="image/x-icon">
+        <link rel="stylesheet" href="../styles/style.css">
+
+    </head>
+    <body>
+      <!-- Header -->
+        <header>
+          <div class="logo">
+            <a href="../index.html"><img src="../assets/images/andrea-logo.png" alt="" width="80"></a>
+          </div>
+          <button class="nav-toggle" aria-label = "toggle navigation">
+            <span class="hamburger"></span>
+          </button>
+          <nav class="nav">
+            <ul class="nav__list"> <!-- double underscore to mark the list as a subcomponent of nav-->
+              <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+              <li class="nav__item"><a href="../index.html#about" class="nav__link">About</a></li>
+              <li class="nav__item"><a href="../index.html#experience" class="nav__link">Experience</a></li>
+              <li class="nav__item"><a href="../index.html#education" class="nav__link">Education</a></li>
+              <li class="nav__item"><a href="../index.html#work" class="nav__link">My Work</a></li>
+              <li class="nav__item"><a href="../index.html#skills" class="nav__link">Skills</a></li>
+              <li class="nav__item"><a href="../index.html#get-in-touch" class="nav__link">Get in Touch</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- Intro -->
+        <section class="intro" id="home" style="padding: 2em 2em 2em 2em">
+            <h1 class="section__title section__title--intro">
+                 VR Cognitive<strong>Assessment Tool</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Internship Project at ICON</p>
+            <img src="../assets/images/portfolio/VRCATlogo.png" alt="" class="proj__img">
+        </section>
+
+        <!-- Content -->
+
+        <div class="portfolio-item-individual">
+          <p>
+             A tool to easily run and manage VR sensorimotor experiments, powered by Unity.
+             Designed and developed over two consecutive summers at the
+             <a href="https://immersivecognition.com/" target="_blank">Immersive Cognition Laboratory</a>
+             (ICON) in Leeds School of Psychology.
+          </p>
+          <p>
+              Inspired by the original, tablet-based <a href="https://pubmed.ncbi.nlm.nih.gov/19646475/">Clinical Kinematic Assessment Tool</a>, VRCAT was commissioned by ICON to bring the scalable assessment of Fundamental Motor Skills into three-dimensions.
+              Allowing for 3D positional and rotational tracking, VRCAT can record movement data for the head and hands with all 6 degrees of freedom.
+              Powered by the <a href="https://github.com/immersivecognition/unity-experiment-framework">Unity Experiment Framework</a>, it's flexible structure facilitates the collection of data across multiple experiments, such as the Aiming,
+              Tracking and Interceptive Timing tasks that were developed and integrated into the battery.
+          </p>
+           <div class="gif-container">
+             <img src="../assets/images/portfolio/vrcat.png" alt="" class="vrcat__img">
+           </div>
+           <div class="portfolio-item-btn">
+             <a href="https://github.com/Andrea-Loriedo/VRCAT" target="_blank" class="btn">View full project on GitHub <i class="fab fa-github"></i></a>
+           </div>
+       </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <a href="mailto:loriedoandrea@gmail.com" class="footer__link">loriedoandrea@gmail.com</a>
+
+          <ul class="social-list">
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/andrea-loriedo/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/Andrea-Loriedo" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+            </li>
+          </ul>
+
+          <div class="col-sm-5 copyright">
+              <p>
+                  Copyright &copy; 2021  Andrea Loriedo
+              </p>
+          </div>
+        </footer>
+
+        <script src="../scripts/index.js"></script>
+    </body>
+</html>

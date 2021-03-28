@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Andrea Loriedo - VR Arm Tracking System</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+
+        <!-- Update these with your own fonts -->
+        <script src="https://kit.fontawesome.com/0eb5144cc3.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500;900&family=Source+Sans+Pro:wght@300;500;900&display=swap" rel="stylesheet">
+        <link rel="shortcut icon" href="../assets/images/avatar.jpeg" type="image/x-icon">
+        <link rel="stylesheet" href="../styles/style.css">
+
+    </head>
+    <body>
+      <!-- Header -->
+        <header>
+          <div class="logo">
+            <a href="../index.html"><img src="../assets/images/andrea-logo.png" alt="" width="80"></a>
+          </div>
+          <button class="nav-toggle" aria-label = "toggle navigation">
+            <span class="hamburger"></span>
+          </button>
+          <nav class="nav">
+            <ul class="nav__list"> <!-- double underscore to mark the list as a subcomponent of nav-->
+              <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+              <li class="nav__item"><a href="../index.html#about" class="nav__link">About</a></li>
+              <li class="nav__item"><a href="../index.html#experience" class="nav__link">Experience</a></li>
+              <li class="nav__item"><a href="../index.html#education" class="nav__link">Education</a></li>
+              <li class="nav__item"><a href="../index.html#work" class="nav__link">My Work</a></li>
+              <li class="nav__item"><a href="../index.html#skills" class="nav__link">Skills</a></li>
+              <li class="nav__item"><a href="../index.html#get-in-touch" class="nav__link">Get in Touch</a></li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- Intro -->
+        <section class="intro" id="home" style="padding: 2em 2em 2em 2em">
+            <h1 class="section__title section__title--intro">
+                 VR Tracking System<strong>For the human arm</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Year 3 Project</p>
+            <img src="../assets/images/portfolio/vrarm.png" alt="" class="proj__img">
+        </section>
+
+        <!-- Content -->
+
+        <div class="portfolio-item-individual">
+          <p>
+            For behavioural researchers, VR technology represents a powerful tool to
+            examine human behaviour in three-dimensional computer-generated environments.
+            However, the lack of low-cost wearables allowing full limb tracking restricts the scope
+            of the possible studies that would benefit
+            from the versatility of VR platforms.
+          </p>
+          <p>
+            My 3rd Year University Project consisted in designing a low-cost wearable
+            device enabling full arm tracking in a VR throwing experiment.
+          </p>
+           <div class="gif-container">
+             <img src="../assets/images/portfolio/gifs/GameDemo.gif" alt="" class="vrarm__gif">
+           </div>
+           <p>
+             <strong>Mechatronics and Robotics (Beng) Year 3 Project:</strong>
+             Design of an Embedded Motion-Tracking System for the Human Arm
+           </p>
+           <p>
+             <strong>Final Grade:</strong>
+             First Class Honours
+           </p>
+           <div class="portfolio-item-btn">
+             <a href="https://github.com/Andrea-Loriedo/VR-throwing-task" target="_blank" class="btn">View full project on GitHub <i class="fab fa-github"></i></a>
+           </div>
+       </div>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <a href="mailto:loriedoandrea@gmail.com" class="footer__link">loriedoandrea@gmail.com</a>
+
+          <ul class="social-list">
+              <li class="social-list__item">
+                <a class="social-list__link" href="https://www.linkedin.com/in/andrea-loriedo/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" href="https://github.com/Andrea-Loriedo" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+            </li>
+          </ul>
+
+          <div class="col-sm-5 copyright">
+              <p>
+                  Copyright &copy; 2021  Andrea Loriedo
+              </p>
+          </div>
+        </footer>
+
+        <script src="../scripts/index.js"></script>
+    </body>
+</html>

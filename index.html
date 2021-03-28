@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Loriedo - Portfolio</title>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <script src="https://kit.fontawesome.com/0eb5144cc3.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;500;900&family=Source+Sans+Pro:wght@300;500;900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/avatar.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+
+  </head>
+  <body>
+
+  <!-- Header -->
+    <header>
+      <div class="logo">
+        <a href="index.html#home"><img src="assets/images/andrea-logo.png" alt="" width="80"></a>
+      </div>
+      <button class="nav-toggle" aria-label = "toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list"> <!-- double underscore to mark the list as a subcomponent of nav-->
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+          <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="#get-in-touch" class="nav__link">Get in Touch</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am<strong>Andrea Loriedo</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">mechatronics engineer</p>
+        <img src="assets/images/avatar.jpeg" alt="a picture of Jane Smith smiling" class="intro__img">
+    </section>
+
+    <!-- Experience -->
+    <section class="my-experience" id="experience">
+      <h2 class="section__title section__title--experience">Experience</h2>
+      <div class="experience">
+
+        <div class="job">
+          <h3>Artists & Engineers</h3>
+          <h4>Mechatronics Engineer (Freelance)</h4>
+          <p>
+            Deployed a range of physical and digital deliverables within
+            a vibrant production and technology studio.
+            Contributed to the development of creative engineering
+            projects involving PCB assembly and testing, for both
+            independent artists and major brands.
+          </p>
+        </div> <!-- / job  -->
+
+        <div class="job">
+          <h3>Marshmallow Laser Feast</h3>
+          <h4>Production Assistant (Freelance)</h4>
+          <p>
+            Assisted the MLF team in the production
+            and filming of an interactive advertising project for Kia Motors.
+            Helped with the collection of EEG data from participants as a
+            part of the creative process behind the campaign.
+          </p>
+        </div> <!-- / job  -->
+
+        <div class="job">
+          <h3>Immersive Cognition Lab</h3>
+          <h4>Unity Developer (Internship)</h4>
+          <p>
+            Developed a gamified VR Cognitive Assessment Tool in
+            Unity while working closely with a Sensorimotor Research
+            team. Elicited requirements from non technical audiences
+            and worked closely with stakeholders to ensure user
+            requirements were met.
+          </p>
+        </div> <!-- / job  -->
+      </div>
+      <p>Full CV available <a href="#get-in-touch" class="link-light">by request</a></p>
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About -->
+    <section class="about-me" id="about">
+      <h3 class="section__title section__title--about">About</h3>
+
+      <div class="about-me__body">
+        <p>
+          Born in Italy, now London-based, I have recently graduated from the
+          University of Leeds with a 1st in Mechatronics and Robotics Engineering.
+        </p>
+        <p>
+          Over the past few months, the Artists and Engineers production and
+          technology studio gave me the opportunity to transfer my engineering and
+          software skills to a creative space. I have just wrapped up a few exciting
+          projects with them and Marshmallow Laser Feast, working for both artists
+          and disruptive brands.
+        </p>
+        <p>
+          My studies and past experience helped me build a robust background in
+          XR applications, Machine Learning, Software Engineering, Electronics and Mechanics.
+          My passion is the creative use of technology in human-centric experiences and problems.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="my-education" id="education">
+      <h2 class="section__title section__title--education">Education</h2>
+
+      <div class="degree-block">
+        <h3><strong>University of Leeds</strong></h3>
+            <span class="education-date">Sept 2019 - July 2020 </span>
+            <h4>Masters in Mechatronics and Robotics Engineering (MEng)</h4>
+            <h4 id="education-grade">Grade: First Class Honours</h4>
+            <ul>
+                <li>
+                    Core modules: Biomechatronics and Medical Robotics, Embedded Microprocessor System Design, Bio-Inspired computing, Modern Industry Practice.
+                </li>
+                <li>
+                    Masters (MEng) project: “Design and Development of a Gamified Exercise Battery for the MyPam Rehabilitation Robot”.
+                </li>
+            </ul>
+        </div> <!-- Masters -->
+
+        <div class="degree-block">
+          <h3><strong>University of Leeds</strong></h3>
+              <span class="education-date">Sept 2016 - July 2019 </span>
+              <h4>Bachelors in Mechatronics and Robotics Engineering (BEng)</h4>
+              <h4 id="education-grade">Grade: First Class Honours</h4>
+              <ul>
+                  <li>
+                      Core modules: Digital Electronics and Microcontrollers, Circuit Analysis and Design, Circuit Theory, Solid Mechanics, Vibration and Control, Engineering Mathematics, Artificial Intelligence, Design and Manufacture, Robotics and Machine Intelligence, Mobile Applications Development.
+                  </li>
+                  <li>
+                      Final Project: “Low-cost VR Motion Tracking System for the Human Arm”.
+                  </li>
+              </ul>
+          </div> <!-- Masters -->
+
+      </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--my-work">My Work</h2>
+      <p class="section__subtitle"><p>
+
+        <div class="portfolio">
+
+          <!-- MyPam -->
+          <a href="/html/mypam.html" class="portfolio__item">
+            <img src="assets/images/portfolio/mypam.png" alt="" class="portfolio__img">
+          </a>
+
+          <!-- VR Arm -->
+          <a href="/html/vrarm.html" class="portfolio__item">
+            <img src="assets/images/portfolio/vrarm.png" alt="" class="portfolio__img">
+          </a>
+
+          <!-- VRCAT -->
+          <a href="/html/vrcat.html" class="portfolio__item">
+            <img src="assets/images/portfolio/vrcat.png" alt="" class="portfolio__img">
+          </a>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="my-skills" id="skills">
+      <h2 class="section__title section__title--my-skills">My Skills and Interests</h2>
+        <div class="skillcloud" id="skillcloud"></div>
+    </section>
+
+    <!-- Get in Touch -->
+    <section class="contact" id="get-in-touch">
+      <h2 class="section__title section__title--contact">Get In Touch</h2>
+      <form id="contact-form" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xnqlalgq" method="post">
+        <fieldset id="fs-frm-inputs">
+          <input type="text" name="name" id="full-name" placeholder="Your Name" required="">
+          <input type="email" name="_replyto" id="email-address" placeholder="Your Email" required="">
+          <textarea rows="5" name="message" id="message" placeholder="Your Message" required=""></textarea>
+          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+        </fieldset>
+        <input class="button" type="submit" value="Submit">
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:loriedoandrea@gmail.com" class="footer__link">loriedoandrea@gmail.com</a>
+
+      <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://www.linkedin.com/in/andrea-loriedo/" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+        </li>
+        <li class="social-list__item">
+            <a class="social-list__link" href="https://github.com/Andrea-Loriedo" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+        </li>
+      </ul>
+
+      <div class="col-sm-5 copyright">
+          <p>
+              Copyright &copy; 2021  Andrea Loriedo
+          </p>
+      </div>
+    </footer>
+
+    <script src="bower_components/jqcloud2/dist/jqcloud.min.js"></script>
+    <link rel="stylesheet" href="bower_components/jqcloud2/dist/jqcloud.min.css">
+    <script src="scripts/cloud.js"></script>
+    <script src="scripts/index.js"></script>
+
+  </body>
+</html>
