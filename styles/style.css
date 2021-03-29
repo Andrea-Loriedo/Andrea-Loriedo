@@ -25,6 +25,9 @@
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
+
+    --nav-alignment: center;
+    --nav-x: 0;
 }
 
 @media (min-width: 800px) {
@@ -34,6 +37,8 @@
         --fs-h3: 1.4rem;
         --fs-body: 1rem;
         --fs-footer: 1rem;
+        --nav-alignment: left;
+        --nav-x: 85%;
     }
 }
 
@@ -212,7 +217,7 @@ header {
 }
 
 .nav-open .nav {
-    transform: translateX(0);
+    transform: var(--nav-x);
 }
 
 .nav-open .nav-toggle {
