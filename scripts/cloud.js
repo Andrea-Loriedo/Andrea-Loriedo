@@ -43,6 +43,7 @@ $(document).ready(function()
 			afterCloudRender : function(){
 				$("#skillcloud").on('mouseenter', 'span', function() {
 				    $(this).css("transform", "scale(1.1)");
+						$(this).css("cursor", "pointer");
 				});
 				$("#skillcloud").on('mouseout', 'span', function() {
 						$(this).css("transform", "scale(1)");

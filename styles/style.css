@@ -457,6 +457,27 @@ header {
 .portfolio__item {
     /* background: var(--clr-accent); */
     overflow: hidden;
+    text-decoration: none;
+    color: #fff;
+}
+
+#port-item-wrapper {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#port-item-wrapper .portfolio__caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility:hidden;
+    pointer-events: none;
+}
+
+#port-item-wrapper:hover .portfolio__caption {
+    visibility: visible;
 }
 
 .portfolio__img {
@@ -480,8 +501,8 @@ header {
 /* My Skills */
 
 .my-skills {
-  text-align: center;
-  padding: 2em 0 1em 0;
+    text-align: center;
+    padding: 2em 0 1em 0;
 }
 
 .section__title--my-skills {
@@ -516,8 +537,8 @@ header {
 /* Get in touch */
 
 .contact {
-  text-align: center;
-  background-color: var(--clr-dark);
+    text-align: center;
+    background-color: var(--clr-dark);
 }
 
 .section__title--contact {
@@ -537,38 +558,38 @@ header {
 }
 
 #fs-frm-inputs {
-  border: none;
+    border: none;
 }
 
 #contact-form {
-  max-width: 500px;
-  margin: 0 auto;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 /* Form */
 form {
-  max-width: 450px;
-  border-radius: 17px;
-  text-align: center;
-  left: 50%;
+    max-width: 450px;
+    border-radius: 17px;
+    text-align: center;
+    left: 50%;
 }
 
 /* Input */
 .inputfield {
-  font-size: 1.1em;
-  font-weight: bold;
-  display: block;
-  height: 44px;
-  width: 100%;
-  border: solid;
-  outline: none;
-  border-radius: 10px;
-  transition: all 1s;
-  border: 3px solid rgba(102,51,153,0);
-  background: #212121;
-  color: white;
-  margin: 1em 0 2em 0;
-  padding: 2em;
+    font-size: 1.1em;
+    font-weight: bold;
+    display: block;
+    height: 44px;
+    width: 100%;
+    border: solid;
+    outline: none;
+    border-radius: 10px;
+    transition: all 1s;
+    border: 3px solid rgba(102,51,153,0);
+    background: #212121;
+    color: white;
+    margin: 1em 0 2em 0;
+    padding: 2em;
 }
 
 input, textarea {
@@ -582,30 +603,30 @@ input, textarea {
 }
 
 input[type="text"]:focus, input[type="email"]:focus, textarea[type="message"]:focus  {
-  /* border: 3px solid white; */
-  margin-bottom: 10px;
+    /* border: 3px solid white; */
+    margin-bottom: 10px;
 }
 
 /* Button */
 .button {
-  border: none;
-  height: 40px;
-  width: 100%;
-  border-radius: 0.3em;
-  font-size: 20px;
-  font-weight: 600;
-  /* Colors */
-  color: white;
-  background:#212121;
-  /* To get the hover animation to work */
-  transition: transform .5s;
+    border: none;
+    height: 40px;
+    width: 100%;
+    border-radius: 0.3em;
+    font-size: 20px;
+    font-weight: 600;
+    /* Colors */
+    color: white;
+    background:#212121;
+    /* To get the hover animation to work */
+    transition: transform .5s;
 }
 
 .button:hover {
-  transform: scale(1.01);
-  cursor: pointer;
-  background-color: var(--clr-accent);
-  color: #212121;
+    transform: scale(1.01);
+    cursor: pointer;
+    background-color: var(--clr-accent);
+    color: #212121;
 }
 
 /* Footer */
@@ -668,13 +689,13 @@ input[type="text"]:focus, input[type="email"]:focus, textarea[type="message"]:fo
 }
 
 .portfolio-item-btn {
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 
 .proj__img {
-  box-shadow: var(--bs);
+    box-shadow: var(--bs);
 }
 
 .portfolio-item-individual p {
@@ -684,24 +705,30 @@ input[type="text"]:focus, input[type="email"]:focus, textarea[type="message"]:fo
 }
 
 .mypam-gifs {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 .portfolio__gif {
     max-width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     padding: 15px;
 }
 
 .vrarm__gif {
     max-width: 100%;
     max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
 }
 
 .vrcat__img {
     max-width: 50%;
     max-height: 50%;
+    width: auto;
+    height: auto;
+    display: block;
 }
 
 .gif-container {
