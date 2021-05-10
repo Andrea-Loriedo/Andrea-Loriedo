@@ -724,16 +724,16 @@ input[type="text"]:focus, input[type="email"]:focus, textarea[type="message"]:fo
 .vrarm__gif {
     max-width: 100%;
     max-height: 100%;
-    width: auto;
-    height: auto;
+    /* width: auto;
+    height: auto; */
     display: block;
 }
 
 .vrcat__img {
     max-width: 50%;
     max-height: 50%;
-    width: auto;
-    height: auto;
+    /* width: auto;
+    height: auto; */
     display: block;
 }
 
